@@ -15,10 +15,8 @@ namespace TestTask
         {
             using (StreamReader stream = new StreamReader("books.json"))
             {
-                Books = JsonConvert.DeserializeObject<ObservableCollection<Book>>(stream.ReadLine());
+                Books = JsonConvert.DeserializeObject<ObservableCollection<Book>>(stream.ReadToEnd());
             }
-            
-
         }
         
         public ObservableCollection<Book> Books { get; set; }

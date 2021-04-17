@@ -1,1 +1,38 @@
-[{"Id":0,"Author":"Author","Title":"Title","publicationYear":5784}]
+[
+  {
+    "Author": "Erich Maria Remarque",
+    "Id": 0,
+    "publicationYear": 1945,
+    "Title": "Arch of Triumph"
+  },
+  {
+    "Author": "Erich Maria Remarque",
+    "Id": 1,
+    "publicationYear": 1936,
+    "Title": "Three comrades"
+  },
+  {
+    "Author": "Erich Maria Remarque",
+    "Id": 2,
+    "publicationYear": 1929,
+    "Title": "All Quiet at the Western Front"
+  },
+  {
+    "Author": "Kurn Vonnegut",
+    "Id": 3,
+    "publicationYear": 1969,
+    "Title": "Slaughterhouse-Five"
+  },
+  {
+    "Author": "Kurn Vonnegut",
+    "Id": 4,
+    "publicationYear": 1963,
+    "Title": "Cat's Cradle"
+  },
+  {
+    "Author": "Ray Bradbury",
+    "Id": 5,
+    "publicationYear": 1953,
+    "Title": "Fahrenheit 451"
+  },
+]

@@ -10,15 +10,15 @@
         <ListView x:Name="listview"
                   Margin="0,0,0,50">
             <ListView.View>
-                <GridView x:Name ="gridView">
-                    
-                </GridView>
+                <GridView x:Name ="gridView" >
+					<GridViewColumn Header=""/>
+				</GridView>
             </ListView.View>
         </ListView>
         <Button Content="Купить"
                 VerticalAlignment="Bottom"
                 Margin="15"
                 Width="70"
-                Height="20"/>
+                Height="20" Click="Button_Click"/>
     </Grid>
 </Window>
