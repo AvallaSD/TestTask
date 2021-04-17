@@ -10,19 +10,8 @@
         <ListView x:Name="listview"
                   Margin="0,0,0,50">
             <ListView.View>
-                <GridView>
-                    <GridViewColumn Width="100"
-                                    Header="Id"
-                                    DisplayMemberBinding="{Binding Path=Id}"/>
-                    <GridViewColumn Width="100"
-                                    Header="Title"
-                                    DisplayMemberBinding="{Binding Path=Title}"/>
-                    <GridViewColumn Width="100"
-                                    Header="Author"
-                                    DisplayMemberBinding="{Binding Path=Author}"/>
-                    <GridViewColumn Width="100"
-                                    Header="publishingYear"
-                                    DisplayMemberBinding="{Binding Path=publicationYear}"/>
+                <GridView x:Name ="gridView">
+                    
                 </GridView>
             </ListView.View>
         </ListView>

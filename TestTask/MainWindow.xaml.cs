@@ -20,11 +20,16 @@ namespace TestTask
     /// </summary>
     public partial class MainWindow : Window
     {
-        BookStore store = new BookStore();
+        BookStore store;
         public MainWindow()
         {
             InitializeComponent();
+            store = new BookStore();
             listview.ItemsSource = store.Books;
+            foreach (var property in typeof(Book).GetProperties())
+            {
+                gridView.Columns.Add(new GridViewColumn() { Header = property.Name, DisplayMemberBinding = new Binding(property.Name) });
+            }
         }
     }
 }
