@@ -38,17 +38,18 @@ namespace TestTask
             }
         }
 
+
         private void CurrentHeader_Click(object sender, RoutedEventArgs e)
         {
             var headerClicked = e.OriginalSource as GridViewColumnHeader;
-
-            store.Books = store.Books.OrderBy(x => 
-            typeof(Book).GetProperties().Where(x => x.Name == headerClicked.Content.ToString()).Take(1)) as ObservableCollection<Book>;
+            store.Sort(headerClicked.Content.ToString());
+            listview.ItemsSource = store.Books;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            store.Books.RemoveAt(listview.SelectedIndex);
+            store.Buy(listview.SelectedIndex);
+            listview.ItemsSource = store.Books;
         }
     }
 }

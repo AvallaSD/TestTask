@@ -21,14 +21,15 @@ namespace TestTask
         
         public ObservableCollection<Book> Books { get; set; }
 
-        public void Sort()
+        public void Sort(string propertyName)
         {
-
+            Books = new ObservableCollection<Book>(Books.OrderBy(x =>
+            typeof(Book).GetProperties().Where(x => x.Name == propertyName).Single().GetValue(x)));
         }
 
-        public void Buy()
+        public void Buy(int index)
         {
-
+            Books.RemoveAt(index);
         }
 
     }
